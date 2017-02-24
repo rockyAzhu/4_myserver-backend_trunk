@@ -1,0 +1,26 @@
+ext.spec = [
+    // https://repo1.maven.org/maven2/com/linkedin/pegasus/
+    'linkedin' : [
+        'pegasus' : [
+            'data' : 'com.linkedin.pegasus:data:' + pegasusVersion,
+            'restliCommon' : 'com.linkedin.pegasus:restli-common:' + pegasusVersion,
+            'restliServer' : 'com.linkedin.pegasus:restli-server:' + pegasusVersion,
+            'restliClient':'com.linkedin.pegasus:restli-client:' + pegasusVersion,
+            'r2FilterCompression' : 'com.linkedin.pegasus:r2-filter-compression:'+ pegasusVersion,
+            'restliSpringBridge' : 'com.linkedin.pegasus:restli-spring-bridge:' + pegasusVersion
+        ]
+    ],
+
+    // https://repo1.maven.org/maven2/org/springframework/
+    'springFramework' : [
+        'springContext': 'org.springframework:spring-context:' + springVersion
+    ],
+
+    // https://repo1.maven.org/maven2/org/eclipse/jetty/
+    'eclipse' : [
+        'jetty': [
+            'jettyServlet': 'org.eclipse.jetty:jetty-servlet:' + jettyVersion,
+            'jettyWebapp': 'org.eclipse.jetty:jetty-webapp:' + jettyVersion
+        ]
+    ]
+]

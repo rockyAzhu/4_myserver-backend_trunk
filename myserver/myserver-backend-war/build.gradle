@@ -1,0 +1,25 @@
+apply plugin: 'war'  // compile(), war.*
+
+// */myserver/myserver-backend-war/build/libs/myserver-backend.war
+war.archiveName "myserver-backend.war"
+
+// ~/.m2/repoitory/com/mycompany/myproject/myserver-backend/0.0.1/
+project.archivesBaseName = "myserver-backend"
+
+dependencies {
+  // RestLiServlet
+  //compile 'com.linkedin.pegasus:restli-server:6.0.12'
+  compile spec.linkedin.pegasus.restliServer
+
+  // resource defintion
+  compile project(':myserver:rest-impl')
+
+  // jetty simulation
+  compile spec.eclipse.jetty.jettyServlet
+  compile spec.eclipse.jetty.jettyWebapp
+
+  // web.xml: FilterChains, SimpleLoggingFilter, ServerCompressionFilter
+  compile spec.linkedin.pegasus.r2FilterCompression
+  // web.xml RestliHttpRequestHandler, SpringInjectResourceFactory
+  compile spec.linkedin.pegasus.restliSpringBridge
+}

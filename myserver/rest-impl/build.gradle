@@ -1,0 +1,12 @@
+apply plugin: 'pegasus' // defines compile project()
+
+ext.apiProject = project(':myserver:rest-api')
+dependencies {
+    // ComplexKeyResourceTemplate, CollectionResourceTemplate, @RestLiCollection
+    //compile 'com.linkedin.pegasus:restli-server:6.0.12'
+    compile spec.linkedin.pegasus.restliServer
+    // @Component
+    compile spec.springFramework.springContext
+
+    compile project(':myserver:rest-api')
+}

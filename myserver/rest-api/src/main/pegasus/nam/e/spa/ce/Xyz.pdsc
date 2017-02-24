@@ -1,0 +1,24 @@
+{
+  "type": "record",
+  "name": "Xyz",
+  "namespace": "nam.e.spa.ce",
+  "doc": "Be nice to write something!",
+  "fields": [
+    {
+      "name": "a",
+      "type": "int",
+      "doc": "Be nice to write something!"
+    },
+    {
+      "name": "b",
+      "type": "int",
+      "doc": "Be nice to write something!"
+    },
+    {
+      "name": "result",
+      "type": "int",
+      "doc": "Be nice to write something!",
+      "optional": true
+    }
+  ]
+}

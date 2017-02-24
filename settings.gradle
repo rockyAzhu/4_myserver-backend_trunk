@@ -1,0 +1,4 @@
+include 'myserver:rest-api'
+include 'myserver:rest-impl'
+include 'myserver:myserver-backend-war'
+include 'myserver:rest-client'

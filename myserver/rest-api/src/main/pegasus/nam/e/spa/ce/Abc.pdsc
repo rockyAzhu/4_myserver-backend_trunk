@@ -1,0 +1,18 @@
+{
+  "type": "record",
+  "name": "Abc",
+  "namespace": "nam.e.spa.ce",
+  "doc": "Be nice to write something!",
+  "fields": [
+    {
+      "name": "key",
+      "type": "string",
+      "doc": "Be nice to write something!"
+    },
+    {
+      "name": "entity",
+      "type": "string",
+      "doc": "Be nice to write something!"
+    }
+  ]
+}
